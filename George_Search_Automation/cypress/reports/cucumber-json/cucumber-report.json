@@ -1,0 +1,143 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "Login",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I navigate to the George homepage",
+            "result": {
+              "duration": 592000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter the username '107675017'",
+            "result": {
+              "duration": 1724000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the Start login button",
+            "result": {
+              "duration": 648000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "name": "I enter the password",
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on the Login button",
+            "result": {
+              "duration": 1568000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "geaorge---search-functionality;search-for-fashion",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Search for Fashion",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 16,
+            "name": "I enter the search term Fashion",
+            "result": {
+              "duration": 8967000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click on the search button",
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should be presented with 3 outgoing transactions",
+            "result": {
+              "duration": 462000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          },
+          {
+            "line": 13,
+            "name": "@fashion"
+          }
+        ]
+      }
+    ],
+    "id": "geaorge---search-functionality",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Geaorge - Search Functionality",
+    "uri": "cypress/e2e/Search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]

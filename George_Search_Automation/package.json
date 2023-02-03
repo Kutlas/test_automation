@@ -1,0 +1,44 @@
+{
+  "name": "george_search_automation",
+  "version": "1.0.0",
+  "description": "George interview Search Functionality Test Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "search-fashion-headed": "cypress run -e TAGS='@fashion' --headed && node cucumber-html-report.js",
+    "search-fashion-headed-chrome": "cypress run -e TAGS='@fashion' --headed --browser chrome && node cucumber-html-report.js",
+    "search-fashion-headless-chrome": "cypress run -e TAGS='@fashion' --browser chrome && node cucumber-html-report.js",
+    "search-smoketest-headed": "cypress run -e TAGS='@smoke' --headed && node cucumber-html-report.js",
+    "search-regressiontest-headed": "cypress run -e TAGS='@regression' --headed && node cucumber-html-report.js"
+  },
+  "author": "Farbod Raubetean",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "browserify": "^17.0.0",
+    "cypress": "^12.5.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "multiple-cucumber-html-reporter": "^3.1.0",
+    "ts-loader": "^9.4.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html/cucumber-report.html"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "/Users/farbod/cucumber-json-formatter/cucumber-json-formatter",
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
+    }
+  },
+  "dependencies": {
+    "react-dev-utils": "^10.0.0"
+  }
+}
