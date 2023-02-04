@@ -3,10 +3,6 @@ import Search_PO from "../page_objects/Search_PO";
 
 const searchPage = new Search_PO
 
-// When('I enter the search term Fashion', () => {
-//     cy.get("[id^='dropdown-']", { timeout: 20000 }).eq(8).type('Fashion');
-// })
-
 When('I enter the search term Fashion', () => {
     searchPage.type_Search_Term('Fashion')
 })

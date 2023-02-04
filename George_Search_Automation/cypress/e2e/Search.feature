@@ -1,5 +1,5 @@
 @regression
-Feature: Geaorge - Search Functionality
+Feature: George - Transactions Search Functionality
 
     Background: Login
 
